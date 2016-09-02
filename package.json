@@ -1,0 +1,24 @@
+{
+  "name": "dustul",
+  "version": "1.0.0",
+  "description": "CLI utility for rendering Dust templates as Consul values change",
+  "keywords": ["consul", "dust", "dustjs", "consul-template"],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "commander": "^2.9.0",
+    "consul": "^0.25.0",
+    "debug": "^2.2.0",
+    "dustjs-helpers": "^1.7.3",
+    "dustjs-linkedin": "^2.7.3",
+    "lodash": "^4.15.0"
+  },
+  "bin": {
+    "dustul": "./lib/dustul"
+  }
+}
