@@ -1,6 +1,6 @@
 {
   "name": "dustul",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "CLI utility for rendering Dust templates as Consul values change",
   "keywords": ["consul", "dust", "dustjs", "consul-template"],
   "main": "lib/dustul.js",
@@ -19,6 +19,6 @@
     "lodash": "^4.15.0"
   },
   "bin": {
-    "dustul": "./lib/dustul"
+    "dustul": "./lib/dustul.js"
   }
 }
