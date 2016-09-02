@@ -3,7 +3,7 @@
 CLI utility for rendering Dust templates as Consul values change. More details soon.
 
 ```
-$ dustul -c ./config.js
+$ dustul render -c ./config.js
 
 // config.js
 module.exports = {
