@@ -80,7 +80,11 @@ module.exports = [
         },
         /**
          * This function is called just before Dust rendering occurs. Here you
-         * can make final modifications to your context object.
+         * can make final modifications to your context object. You also receive a reference to
+         * the promisified consul client, which you can use to make additional Consul queries,
+         * if desired.
+         *
+         * If this method returns a promise, rendering will not occur until the promise is resolved.
          */
         'beforeRender': (consul, context) => {
             context.date = new Date();
@@ -134,10 +138,6 @@ Next, call Dustul and provide it with the path to your configuration file, as sh
 ``` bash
 $ dustul subscribe -c ./config.js
 ```
-
-## Limitations &amp; Desired Contributions
-
-At the moment, Dustul only allows you to subscribe to changes within Consul's key value store. Short-term plans including adding support for subscribing to service and node changes, as well.
 
 ## Related Resources
 
